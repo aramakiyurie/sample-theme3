@@ -3,9 +3,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ) ?>">
 <title>日本の景色写真展</title>
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:480px)">
 <?php wp_head();?>
 </head>
 
@@ -14,7 +11,7 @@
   <header>
     <h1>
       <a href="index.html">
-        <img src="images/logo.gif" width="268" height="64" alt="日本の景色写真展">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" width="268" height="64" alt="日本の景色写真展">
       </a>
     </h1>
   </header>
