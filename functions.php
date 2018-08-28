@@ -4,6 +4,13 @@
 
 	function theme_setup() {
 		add_theme_support( 'custom-logo' );
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'post-thumbnails' );
+		register_nav_menus(
+		array(
+			'primary2' => 'Primary Menu2'
+		)
+	);
 
 	}
 
@@ -30,5 +37,6 @@
 		wp_enqueue_style( 'theme-style',  get_stylesheet_uri() );
 		}
 		add_action( 'wp_enqueue_scripts', 'theme_style');
+
 
 ?>
