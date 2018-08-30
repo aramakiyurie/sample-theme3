@@ -18,6 +18,12 @@
 	text-indent: -9.3em;
 }
 
+.topics2 ul li {
+	margin-top: 1.5em;
+	border-bottom: dotted 1px #666;
+}
+
+
 .sec_field {
 	margin-bottom: 30px;
 	overflow: hidden;

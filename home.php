@@ -21,26 +21,23 @@
 
 <div class="contents">
 	<main>
-		<article class="topics">
+		<section class="topics">
 			<h2>トピックス</h2>
 			<ul>
+				<?php
+					$args = array(
+						'posts_per_page' => 5
+					);
+					query_posts( $args );
+				 while( have_posts() ) : the_post();
+			 ?>
 				<li>
-					<time datetime="2015-09-20">2015年09月20日</time>
-					総入場者数が１万人を突破いたしました。
+					<time datetime="<?php the_time( 'Y-m-d' ) ?>"><?php the_time( get_option( 'date_format' ) ); ?></time>
+					<?php the_title(); ?>
 				</li>
-				<li>
-					<time datetime="2015-09-18">2015年09月18日</time>
-					大阪会場で展示会がスタートいたしました。たくさんの皆様のご来場をお待ちしております。
-				</li>
-				<li>
-					<time datetime="2015-09-13">2015年09月13日</time>
-					9月下旬に大阪会場で写真家５名によるギャラリートークを開催いたします。詳しい日程は決まり次第お知らせいたします。</li>
-				<li>
-					<time datetime="2015-09-10">2015年09月10日</time>
-					東京会場は終了いたしました。たくさんの皆様のご来場ありがとうございました。
-				</li>
+			<?php endwhile; ?>
 			</ul>
-		</article>
+		</section>
 	</main>
 
 
