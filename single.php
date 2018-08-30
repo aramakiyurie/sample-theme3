@@ -1,12 +1,6 @@
 <?php get_header();?>
 
-<nav>
-<?php
-if ( shortcode_exists( 'wp-structuring-markup-breadcrumb' ) ) {
-    echo do_shortcode( '[wp-structuring-markup-breadcrumb]' );
-}
-?>
-</nav>
+
 
 
 	<div class="contents">

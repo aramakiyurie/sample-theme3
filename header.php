@@ -14,6 +14,7 @@
       </a>
     </h1>
   </header>
+	
 
   <nav class="nav">
 		<?php
